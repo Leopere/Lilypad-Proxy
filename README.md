@@ -1,10 +1,10 @@
-# GoLilypad-Connect Server Container
-This will create a Lilypad authentication server.  This is the backbone of a Lilypad Network.  Its what tells Proxies and Minecraft servers in a Lilypad network where to find each other.
+# GoLilypad-Proxy Server Container
+This will create a Lilypad proxy server.  This is the front door of a Lilypad Network.  Its what actually does the packet routing between the server and the player. You can run this temporarily without a Lilypad-Connect server running but no new players will be able to join your network.  Nor will anyone be able to switch servers or communicate anything between servers (this includes Private messages or other plugin related communication). Your server will also appear to have a player count of 0 our of 0 slots without a Lilypad-Connect that this proxy instance can connect to.
 
 ## How-To
 Run via docker run
 
-    docker run -d chamuns/GoLilypad-Connect
+    docker run -d chamuns/GoLilypad-Proxy
 
 Run via docker-compose.yml
 
@@ -25,15 +25,15 @@ Complete tested and functional.
 
 ## Health & Statistics
 #### Repository Health
-[![GitHub issues](https://img.shields.io/github/issues/chamunks/Lilypad-Connect.svg?style=flat-square)](https://github.com/chamunks/Lilypad-Connect) out of [![GitHub total issues](https://img.shields.io/github/issues-raw/chamunks/Lilypad-Connect.svg?style=flat-square)](https://github.com/chamunks/Lilypad-Connect)
+[![GitHub issues](https://img.shields.io/github/issues/chamunks/Lilypad-Proxy.svg?style=flat-square)](https://github.com/chamunks/Lilypad-Proxy) out of [![GitHub total issues](https://img.shields.io/github/issues-raw/chamunks/Lilypad-Proxy.svg?style=flat-square)](https://github.com/chamunks/Lilypad-Proxy)
 
 #### Container Build Health
-[![Docker Pulls](https://img.shields.io/docker/pulls/chamunks/Lilypad-Connect.svg?style=flat-square)](https://registry.hub.docker.com/u/chamunks/Lilypad-Connect/)
-[![Docker Stars](https://img.shields.io/docker/stars/chamunks/Lilypad-Connect.svg?style=flat-square)](https://registry.hub.docker.com/u/chamunks/Lilypad-Connect/)
-[![Docker Build Status](http://hubstatus.container42.com/chamunks/Lilypad-Connect)](https://registry.hub.docker.com/u/chamunks/Lilypad-Connect)
+[![Docker Pulls](https://img.shields.io/docker/pulls/chamunks/Lilypad-Proxy.svg?style=flat-square)](https://registry.hub.docker.com/u/chamunks/Lilypad-Proxy/)
+[![Docker Stars](https://img.shields.io/docker/stars/chamunks/Lilypad-Proxy.svg?style=flat-square)](https://registry.hub.docker.com/u/chamunks/Lilypad-Proxy/)
+[![Docker Build Status](http://hubstatus.container42.com/chamunks/Lilypad-Proxy)](https://registry.hub.docker.com/u/chamunks/Lilypad-Proxy)
 
 #### Repository Statistics/Info
-[![GitHub license](https://img.shields.io/github/license/chamunks/Lilypad-Connect.svg?style=flat-square)](https://github.com/chamunks/Lilypad-Connect)
+[![GitHub license](https://img.shields.io/github/license/chamunks/Lilypad-Proxy.svg?style=flat-square)](https://github.com/chamunks/Lilypad-Proxy)
 
-[![GitHub forks](https://img.shields.io/github/forks/chamunks/Lilypad-Connect.svg?style=flat-square)](https://github.com/chamunks/Lilypad-Connect)
-[![GitHub stars](https://img.shields.io/github/stars/chamunks/Lilypad-Connect.svg?style=flat-square)](https://github.com/chamunks/Lilypad-Connect)
+[![GitHub forks](https://img.shields.io/github/forks/chamunks/Lilypad-Proxy.svg?style=flat-square)](https://github.com/chamunks/Lilypad-Proxy)
+[![GitHub stars](https://img.shields.io/github/stars/chamunks/Lilypad-Proxy.svg?style=flat-square)](https://github.com/chamunks/Lilypad-Proxy)
