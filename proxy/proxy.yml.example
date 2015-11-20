@@ -1,0 +1,36 @@
+connect:
+  address: 127.0.0.1:5091
+  credentials:
+    username: example
+    password: example
+proxy:
+  bind: :25565
+  routes:
+  - domain: ""
+    server: example
+  - domain: example.com
+    servers:
+    - hub1
+    - hub2
+    motd: Example Custom MOTD
+  - domain: hub.exmaple.com
+    server: hub
+    motds:
+    - Example MOTD 1
+    - Example MOTD 2
+  - domain: icon.exmaple.com
+    server: hub
+    icon: icon.png
+    icons:
+    - icon1.png
+    - icon2.png
+    - icons/icon3.png
+  locale:
+    full: The server seems to be currently full. Try again later!
+    offline: The requested server is currently offline. Try again later!
+    loggedIn: You seem to be logged in already. Try again later!
+    lostConn: Lost connection... Please try to reconnect
+    shutdown: The server is being restarted. Please try to reconnect
+  motd: A LilyPad Server
+  maxPlayers: 1
+  authenticate: true
