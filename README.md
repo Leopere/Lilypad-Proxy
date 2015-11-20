@@ -1,4 +1,5 @@
 # GoLilypad-Proxy Server Container
+
 This will create a Lilypad proxy server.  This is the front door of a Lilypad Network.  Its what actually does the packet routing between the server and the player. You can run this temporarily without a Lilypad-Connect server running but no new players will be able to join your network.  Nor will anyone be able to switch servers or communicate anything between servers (this includes Private messages or other plugin related communication). Your server will also appear to have a player count of 0 our of 0 slots without a Lilypad-Connect that this proxy instance can connect to.
 
 ## How-To
