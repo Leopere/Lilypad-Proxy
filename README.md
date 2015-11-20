@@ -4,13 +4,13 @@ This will create a Lilypad proxy server.  This is the front door of a Lilypad Ne
 
 ## How-To
 
-Run via docker run
+Run via script or read the script for how to launch.
 
-    docker run -d chamuns/GoLilypad-Proxy
+    ./proxy.sh up
 
-Run via docker-compose.yml
+Obtain help with proxy.sh.
 
-    docker-compose up -d
+    ./proxy.sh help
 
 You get a bit more control and make less errors launching this container by docker-compose so I suggest you try to install docker-compose and stick to using that over the commands themselves but if you're already confident with using `docker run` and know what you'd like to pass to it argument wise feel free.  The docker volumes all exist within /app/ inside of the container.  
 
