@@ -1,6 +1,6 @@
 #/bin/bash
 latest (){
-  docker pull chamunks/lilypad-proxy:1.7.10
+  docker pull chamunks/lilypad-proxy:latest
 }
 stop_container (){
   docker stop lilypad-proxy
@@ -14,7 +14,7 @@ run (){
     -v /root/Lilypad-Proxy/proxy/proxy.yml:/app/proxy.yml \
     --restart=always \
     --name=lilypad-proxy \
-    chamunks/lilypad-proxy:1.7.10
+    chamunks/lilypad-proxy:latest
 }
 
 case $1 in

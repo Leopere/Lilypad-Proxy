@@ -1,5 +1,5 @@
 proxy:
-  image: chamunks/lilypad-proxy:1.7.10
+  image: chamunks/lilypad-proxy:latest
   ports:
     - "25565:25565"
   volumes:
