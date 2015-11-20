@@ -8,8 +8,6 @@ RUN mkdir -p /app
 ADD http://ci.lilypadmc.com/job/Go-Server-Proxy/93/artifact/target/proxy-linux-amd64 /app/proxy-linux-amd64
 RUN chmod +x /app/proxy-linux-amd64
 
-VOLUME /app/proxy.yml
-
 EXPOSE 25565
 WORKDIR /app/
 ENTRYPOINT  ["/bin/sh"]
