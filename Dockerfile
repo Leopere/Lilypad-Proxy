@@ -10,5 +10,4 @@ RUN chmod +x /app/proxy-linux-amd64
 
 EXPOSE 25565
 WORKDIR /app/
-ENTRYPOINT  ["/bin/sh"]
-CMD  ["/app/proxy-linux-amd64"]
+ENTRYPOINT  ["/app/proxy-linux-amd64"]
