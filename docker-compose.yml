@@ -1,0 +1,9 @@
+## This docker-compose file example is using default settings.
+proxy:
+  image: chamunks/lilypad-proxy
+  ports:
+    - "25565:25565"
+  volumes:
+    - "./proxy/proxy.yml:/app/proxy.yml"
+  ## Restart policies can be set to anything from here https://docs.docker.com/v1.8/reference/run/#restart-policies-restart
+  restart: always
